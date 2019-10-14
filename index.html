@@ -19,39 +19,13 @@
 </p>
 </div>
 </div><!-- fin wrapper -->
+<script src="bouffe.js"></script>
 <script>
 (function () {
 	document.body.style.backgroundImage = `url(img/bg_${randomInt(1,26)}.jpg), url(img/trame.png)`;
 
-	const places = [
-		"Subway",
-		"Pita",
-		"Lekker",
-		"Kebab",
-		"McDo",
-		"Sushi Shop",
-		"Jap",
-		"Aris",
-		"la boulange du métro",
-		"la boulange Louise Michel",
-		"la boulange Niel",
-		"la boulange secrète",
-		"la boulange en face de Sushi Shop",
-		"au Briard",
-		"Bagel secret",
-		"On a faim !",
-		"Trattoria",
-		"Bibimbap",
-		"Le Lotus Bleu",
-		"Damas",
-		"le chinois",
-		"La petite assiette",
-		"Pizzeria Torino",
-		"Terra Gourma",
-	];
-
-	const firstChoice = pickRandomItem(places);
-	const secondChoice = pickRandomItem(places);
+	const firstChoice = pickRandomItem(window.places);
+	const secondChoice = pickRandomItem(window.places);
 
 	document.getElementById('first-choice').textContent = firstChoice;
 	document.getElementById('second-choice').textContent = secondChoice;
