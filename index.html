@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>Où est-ce qu’on bouffe à midi ?</title>
+<meta name="description" content="Où est-ce qu’on bouffe à midi ?">
+<meta name="keywords" content="Où est-ce qu’on bouffe à midi ?">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onClick="window.location.reload( true );">
+<div id="wrapper">
+<div id="cv">
+<h1>Où est-ce qu’on bouffe à midi ?</h1>
+<p>
+	Ben on a qu’à aller chez
+	<strong id="first-choice"></strong>,
+	<br />
+	Ou au pire chez
+	<strong id="second-choice"></strong>.
+</p>
+</div>
+</div><!-- fin wrapper -->
+<script>
+(function () {
+	document.body.style.backgroundImage = `url(img/bg_${randomInt(1,26)}.jpg), url(img/trame.png)`;
+
+	const places = [
+		"Subway",
+		"Pita",
+		"Lekker",
+		"Kebab",
+		"McDo",
+		"Sushi Shop",
+		"Jap",
+		"Aris",
+		"la boulange du métro",
+		"la boulange Louise Michel",
+		"la boulange Niel",
+		"la boulange secrète",
+		"la boulange en face de Sushi Shop",
+		"au Briard",
+		"Bagel secret",
+		"On a faim !",
+		"Trattoria",
+		"Bibimbap",
+		"Le Lotus Bleu",
+		"Damas",
+		"le chinois",
+		"La petite assiette",
+		"Pizzeria Torino",
+		"Terra Gourma",
+	];
+
+	const firstChoice = pickRandomItem(places);
+	const secondChoice = pickRandomItem(places);
+
+	document.getElementById('first-choice').textContent = firstChoice;
+	document.getElementById('second-choice').textContent = secondChoice;
+
+	function randomInt(min, max) {
+		// Random integer from [min;max[
+		return Math.floor(Math.random() * (max - min)) + min;
+	}
+
+	function pickRandomItem(list) {
+		const itemIndex = randomInt(0, list.length);
+		const spliced = list.splice(itemIndex, 1);
+
+		return spliced[0];
+	}
+}());
+</script>
+</body>
+</html>
