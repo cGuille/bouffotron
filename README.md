@@ -8,4 +8,4 @@ Le bouffotron est mis en œuvre ici si vous voulez tester :
 Installation :
 ---
 1. Tu fork le repo et édites le fichier `bouffe.js` avec tes propres restos.
-2. Tu configures GitHub pages pour service ta propre version et tu ne juges pas le code, ça se fait pas, merci.
+2. Tu configures GitHub pages pour servir ta propre version et tu ne juges pas le code, ça se fait pas, merci.
