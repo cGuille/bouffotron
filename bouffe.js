@@ -1,5 +1,5 @@
 window.places = [
-    "Caffe Domeva",
+    "Domeva Caffe",
     "Pizza Mont d'Or",
     "Le 18",
     "Delecto (Boulangerie culinaire)",
@@ -12,7 +12,10 @@ window.places = [
     "Le Moulin",
     "Milord circus",
     "Lachaume",
-    "Accords gourmants",
+    "Accords gourmands",
     "Le Tiroir",
     "Aussie Frenchi",
+    "Racine",
+    "Snack Brasil",
+    "Happy Bowl",
 ];
